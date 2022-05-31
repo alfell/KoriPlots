@@ -29,7 +29,7 @@ ggplot(data = mtcars, aes(x = mpg, y = cyl)) +
 # Grid Lines on y-Axis and other Base Size
 ggplot(data = mtcars, aes(x = mpg, y = cyl)) +
     geom_point() +
-    koriPlot(grid_lines = "x", base_size = 12)
+    koriPlot(grid_lines = "y", base_size = 12)
 ```
 
 ## Getting help
