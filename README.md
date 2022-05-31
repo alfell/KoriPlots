@@ -19,17 +19,17 @@ library(KoriPlots)
 # Make Plot (default no grid_lines)
 ggplot(data = mtcars, aes(x = mpg, y = cyl)) +
     geom_point() +
-    koriPlot()
+    KoriPlot()
     
 # Grid Lines on x-Axis
 ggplot(data = mtcars, aes(x = mpg, y = cyl)) +
     geom_point() +
-    koriPlot(grid_lines = "x")
+    KoriPlot(grid_lines = "x")
     
 # Grid Lines on y-Axis and other Base Size
 ggplot(data = mtcars, aes(x = mpg, y = cyl)) +
     geom_point() +
-    koriPlot(grid_lines = "y", base_size = 12)
+    KoriPlot(grid_lines = "y", base_size = 12)
 ```
 
 ## Getting help
