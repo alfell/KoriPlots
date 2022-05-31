@@ -1,0 +1,10 @@
+Package: KoriPlots
+Type: Package
+Title: Styling Kori's beautiful Plots
+Version: 0.1.0
+Author: Alessandro Feller
+Maintainer: Alessandro Feller <aless.feller@gmail.com>
+Description: Theme Functions to style Kori's Coeficient Plots.
+Encoding: UTF-8
+License: MIT
+LazyData: true
