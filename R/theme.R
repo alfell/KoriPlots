@@ -23,7 +23,7 @@
 #' @export
 #' @import ggplot2 dplyr broom
 #' @importFrom gridExtra arrangeGrob
-KoriPlot <- function(base_size = 16,
+koriPlot <- function(base_size = 16,
                      base_family = "",
                      base_line_size = base_size/50,
                      base_rect_size = base_size/50,
