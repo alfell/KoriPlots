@@ -19,7 +19,6 @@
 #' ggplot(mtcars, aes(x = mph, y = cyl)) +
 #'    koriPlot(base_size = 18, grid_lines = "x")
 #'
-
 #' @export
 #' @import ggplot2 dplyr broom
 #' @importFrom gridExtra arrangeGrob
