@@ -1,4 +1,24 @@
-## Fantastic Theme Function
+#' koriPlot Function
+#'
+#' @description Styling function for Kori's beautiful ggplots.
+#'
+#' @param base_size Numeric value that determines the base size of the plot. Default is 16.
+#'
+#' @param base_line_size Numeric value that determines the base line size in the plot. Default is base_size/50.
+#'
+#' @param base_rect_size Numeric value that determines the base rect size in the plot. Default is base_size/50.
+#'
+#' @param grid_lines Character value that determines on which axis the grid lines appear. Default is on both axes.
+#'
+#' @examples
+#' # Default Parameter
+#' ggplot(mtcars, aes(x = mph, y = cyl)) +
+#'    koriPlot()
+#'
+#' # Base size = 18 and grid_lines on x axis
+#' ggplot(mtcars, aes(x = mph, y = cyl)) +
+#'    koriPlot(base_size = 18, grid_lines = "x")
+#'
 
 #' @export
 #' @import ggplot2 dplyr broom
