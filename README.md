@@ -1,7 +1,3 @@
----
-output: github_document
----
-
 ## Overview
 
 KoriPlots is a package providing Themes that help you make beautiful Graphs in ggplot2.
