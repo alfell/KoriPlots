@@ -1,5 +1,6 @@
 ![KoriPlots (1)](https://user-images.githubusercontent.com/44610225/171997391-677ea639-0a63-4b1f-96fd-dee1be75e7f5.png | width=20)
 ![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
+<img src="https://your-image-url.type](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png)" width="100" height="100">
 
 # KoriPlots
 
