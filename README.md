@@ -1,4 +1,5 @@
-![KoriPlots (1)](https://user-images.githubusercontent.com/44610225/171997652-059df67c-0579-4da7-af29-90ffc5a98405.png)
+<img width="316" alt="Bildschirmfoto 2022-06-04 um 13 51 19" src="https://user-images.githubusercontent.com/44610225/171997730-f2918924-7b5b-4c21-8cf2-61143b07760c.png">
+
 
 # KoriPlots
 
