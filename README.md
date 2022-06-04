@@ -1,8 +1,5 @@
 <img width="316" alt="Bildschirmfoto 2022-06-04 um 13 51 19" src="https://user-images.githubusercontent.com/44610225/171998234-42b5dca8-24b6-4ed6-9407-f8cd253d6ba2.png">
 
-![KoriPlotsLow](https://user-images.githubusercontent.com/44610225/171998234-42b5dca8-24b6-4ed6-9407-f8cd253d6ba2.png)
-
-
 # KoriPlots
 
 KoriPlots is an R package providing themes that help you make beautiful graphs with ggplot2. KoriPlots contains one main function called `koriPlot()`. Main arguments are:
