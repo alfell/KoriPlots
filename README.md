@@ -1,4 +1,4 @@
-<img src="IMAGE_URL_HERE"  width="300" height="300">
+<img src="[IMAGE_URL_HERE](https://github.com/alfell/KoriPlots/blob/master/KoriPlots%20(1).png)"  width="300" height="300">
 
 # KoriPlots
 
