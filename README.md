@@ -1,5 +1,4 @@
-<img src="(https://github.com/alfell/KoriPlots/blob/master/KoriPlots%20(1).png)"  width="200" height="200">
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/alfell/KoriPlots/blob/master/KoriPlots%20(1).png)
+![KoriPlots (1)](https://user-images.githubusercontent.com/44610225/171997652-059df67c-0579-4da7-af29-90ffc5a98405.png)
 
 # KoriPlots
 
