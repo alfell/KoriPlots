@@ -1,4 +1,5 @@
 ![KoriPlots (1)](https://user-images.githubusercontent.com/44610225/171997391-677ea639-0a63-4b1f-96fd-dee1be75e7f5.png)
+<img src="[Assets/icon.png](https://user-images.githubusercontent.com/44610225/171997391-677ea639-0a63-4b1f-96fd-dee1be75e7f5.png)" width="200">
 
 
 # KoriPlots
