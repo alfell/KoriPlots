@@ -24,7 +24,7 @@ KoriPlots is an R package providing themes that help you make beautiful graphs w
 
 The easiest way to get KoriPlots is to install it from this repo:
 
-```{r, echo=TRUE, message = FALSE}
+```{r, echo = TRUE, message = FALSE, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("alfell/KoriPlots")
 ```
