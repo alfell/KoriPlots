@@ -175,11 +175,11 @@ koriPlot <- function(base_size = 16,
         ),
 
         # Grid Lines
-        panel.grid.major.x = element_line(color = "grey",
+        panel.grid.major.y = element_line(color = "grey",
                                         linetype = "solid",
                                         size = rel(0.75)
         ),
-        panel.grid.major.y = element_blank(),
+        panel.grid.major.x = element_blank(),
         panel.grid.minor = element_blank(),
         panel.border = element_rect(colour = "black", fill = NA),
 
@@ -255,11 +255,11 @@ koriPlot <- function(base_size = 16,
         ),
 
         # Grid Lines
-        panel.grid.major.y = element_line(color = "grey",
+        panel.grid.major.x = element_line(color = "grey",
                                           linetype = "solid",
                                           size = rel(0.75)
         ),
-        panel.grid.major.x = element_blank(),
+        panel.grid.major.y = element_blank(),
         panel.grid.minor = element_blank(),
         panel.border = element_rect(colour = "black", fill = NA),
 

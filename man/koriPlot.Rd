@@ -23,7 +23,7 @@ Numeric value that defines base size for line elements. Default is base_size/50.
 Numeric value that defines base size for rect elements. Default is base_size/50.
 }
   \item{grid_lines}{
-Character value defines on which axis the grid lines appear. Default is on both axes.
+Character value that defines on which axis the grid lines appear. Default is both axes.
 }
 }
 
@@ -32,10 +32,24 @@ Alessandro Feller
 }
 
 \examples{
-# Default Parameters
-ggplot(mtcars, aes(x = mph, y = cyl)) +
-       koriPlot()
+# Load Package
+library(KoriPlots)
 
-# Base size = 18 and grid_lines on x axis
-ggplot(mtcars, aes(x = mph, y = cyl)) +
-       koriPlot(base_size = 18, grid_lines = "x")
+# Make Plot (default no grid_lines and legend = "right")
+ggplot(data = mtcars,
+       aes(x = mpg, y = disp)) +
+  geom_point() +
+  koriPlot()
+
+# Make Plot (grid_lines = "x")
+ggplot(data = mtcars,
+       aes(x = mpg, y = disp)) +
+  geom_point() +
+  koriPlot(grid_lines = "x")
+
+# Make Plot (grid_lines = "y", legend = "bottom")
+ggplot(data = mtcars,
+       aes(x = mpg, y = disp)) +
+  geom_point() +
+  facet_wrap(~carb, ncol = 3) +
+  koriPlot(grid_lines = "y")
