@@ -28,14 +28,23 @@ koriPlot <- function(base_size = 16,
                      base_family = "",
                      base_line_size = base_size/50,
                      base_rect_size = base_size/50,
-                     grid_lines = "x") {
+                     grid_lines = "x",
+                     legend = "right") {
+
+  `%notin%` <- Negate(`%in%`)
+  legendPositions <- c("none", "bottom", "top", "right", "left")
 
   # Value must be numeric
-  if (!is.character(grid_lines)) {
-    stop("Value for grid_lines must be numeric")
+  if (!is.character(grid_lines) | !is.character(legend)) {
+    stop("Value must be character.")
 
-    # Grids, when grid_lines = "y"
-  } else if (missing(grid_lines)) {
+    # Legend must be one of legendPositions
+  } else if (legend %notin% legendPositions) {
+    warning <- c('You have not defined a legend position. Please choose one of the following:\n')
+    stop(cat(warning, legendPositions, sep = "\n"))
+
+    # If grid_liones and legend are missing
+  } else if (missing(grid_lines) | missing(legend)) {
 
       theme_bw(
         base_size = base_size,
@@ -92,18 +101,28 @@ koriPlot <- function(base_size = 16,
                                         size = rel(0.75)
         ),
         panel.grid.minor = element_blank(),
+        panel.border = element_rect(colour = "black", fill = NA),
 
 
         # Legend
-        legend.position = "right",
+        legend.position = legend,
         legend.title = element_blank(),
         legend.text = element_text(
           color = rgb(105, 105, 105, maxColorValue = 255),
           size = rel(0.75)
         ),
+
+        # Strips
+        strip.background = element_rect(
+          color = NA,
+          fill = NA,
+          size = rel(0.75)
+        ),
+
         complete = TRUE
       )
 
+    # If grid_lines == "y"
   } else if (grid_lines == "y") {
 
     theme_bw(
@@ -162,19 +181,28 @@ koriPlot <- function(base_size = 16,
         ),
         panel.grid.major.y = element_blank(),
         panel.grid.minor = element_blank(),
+        panel.border = element_rect(colour = "black", fill = NA),
 
 
         # Legend
-        legend.position = "right",
+        legend.position = legend,
         legend.title = element_blank(),
         legend.text = element_text(
           color = rgb(105, 105, 105, maxColorValue = 255),
           size = rel(0.75)
         ),
+
+        # Strips
+        strip.background = element_rect(
+          color = NA,
+          fill = NA,
+          size = rel(0.75)
+        ),
+
         complete = TRUE
       )
 
-    # Grids, when grid_lines = "x"
+    # If grid_lines == "x"
   } else if (grid_lines == "x") {
 
     theme_bw(
@@ -233,15 +261,23 @@ koriPlot <- function(base_size = 16,
         ),
         panel.grid.major.x = element_blank(),
         panel.grid.minor = element_blank(),
-
+        panel.border = element_rect(colour = "black", fill = NA),
 
         # Legend
-        legend.position = "right",
+        legend.position = legend,
         legend.title = element_blank(),
         legend.text = element_text(
           color = rgb(105, 105, 105, maxColorValue = 255),
           size = rel(0.75)
         ),
+
+        # Strips
+        strip.background = element_rect(
+          color = NA,
+          fill = NA,
+          size = rel(0.75)
+        ),
+
         complete = TRUE
       )
   }
