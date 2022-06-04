@@ -1,4 +1,6 @@
-## Overview
+![KoriPlots](https://user-images.githubusercontent.com/44610225/171997281-b3c506e8-83a5-4ddc-8c3b-22b5e60732c8.png)
+
+# KoriPlots
 
 KoriPlots is an R package providing themes that help you make beautiful graphs with ggplot2. KoriPlots contains one main function called `koriPlot()`. Main arguments are:
 
