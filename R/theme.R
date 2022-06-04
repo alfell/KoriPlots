@@ -44,7 +44,7 @@ koriPlot <- function(base_size = 16,
     stop(cat(warning, legendPositions, sep = "\n"))
 
     # If grid_liones and legend are missing
-  } else if (missing(grid_lines) | missing(legend)) {
+  } else if (missing(grid_lines)) {
 
       theme_bw(
         base_size = base_size,
@@ -123,7 +123,7 @@ koriPlot <- function(base_size = 16,
       )
 
     # If grid_lines == "y"
-  } else if (grid_lines == "y") {
+  } else if (grid_lines == "y" | missing(legend)) {
 
     theme_bw(
       base_size = base_size,
@@ -203,7 +203,7 @@ koriPlot <- function(base_size = 16,
       )
 
     # If grid_lines == "x"
-  } else if (grid_lines == "x") {
+  } else if (grid_lines == "x" | missing(legend)) {
 
     theme_bw(
       base_size = base_size,
