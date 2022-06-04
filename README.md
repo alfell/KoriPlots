@@ -1,10 +1,10 @@
-<img width="316" alt="Bildschirmfoto 2022-06-04 um 13 51 19" src="(https://user-images.githubusercontent.com/44610225/171997953-06a6ad9a-a680-444e-a238-5028ee895fdf.png)">
+<img width="316" alt="Bildschirmfoto 2022-06-04 um 13 51 19" src="(https://user-images.githubusercontent.com/44610225/171997822-dfec2fa3-0775-43b3-baf8-e6fc3797a2fd.jpg)">
 
 ![KoriPlotsLow](https://user-images.githubusercontent.com/44610225/171997822-dfec2fa3-0775-43b3-baf8-e6fc3797a2fd.jpg)
 
 ![KoriPlotsLow](https://user-images.githubusercontent.com/44610225/171997953-06a6ad9a-a680-444e-a238-5028ee895fdf.png)
 
-
+https://user-images.githubusercontent.com/44610225/171997822-dfec2fa3-0775-43b3-baf8-e6fc3797a2fd.jpg
 
 # KoriPlots
 
