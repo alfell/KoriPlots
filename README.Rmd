@@ -6,6 +6,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
+library(KoriPlots)
 ```
 
 # KoriPlots
@@ -24,7 +25,7 @@ KoriPlots is an R package providing themes that help you make beautiful graphs w
 
 The easiest way to get KoriPlots is to install it from this repo:
 
-```{r, echo = TRUE, message = FALSE, eval = FALSE}
+```{r, echo = TRUE, message = FALSE}
 # install.packages("devtools")
 devtools::install_github("alfell/KoriPlots")
 ```

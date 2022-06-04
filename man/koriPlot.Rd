@@ -37,19 +37,26 @@ library(KoriPlots)
 
 # Make Plot (default no grid_lines and legend = "right")
 ggplot(data = mtcars,
-       aes(x = mpg, y = disp)) +
+       aes(x = mpg,
+           y = disp,
+           color = as.factor(cyl))) +
   geom_point() +
   koriPlot()
 
 # Make Plot (grid_lines = "x")
 ggplot(data = mtcars,
-       aes(x = mpg, y = disp)) +
+       aes(x = mpg,
+           y = disp)) +
   geom_point() +
   koriPlot(grid_lines = "x")
 
 # Make Plot (grid_lines = "y", legend = "bottom")
 ggplot(data = mtcars,
-       aes(x = mpg, y = disp)) +
+       aes(x = mpg,
+           y = disp,
+           color = as.factor(cyl))) +
   geom_point() +
-  facet_wrap(~carb, ncol = 3) +
-  koriPlot(grid_lines = "y")
+  facet_wrap(~carb,
+             ncol = 3) +
+  koriPlot(grid_lines = "y",
+           legend = "bottom")
