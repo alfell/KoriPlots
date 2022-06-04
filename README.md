@@ -1,5 +1,5 @@
 <img src="(https://github.com/alfell/KoriPlots/blob/master/KoriPlots%20(1).png)"  width="200" height="200">
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/alfell/KoriPlots/blob/master/KoriPlots%20(1).png)
 
 # KoriPlots
 
