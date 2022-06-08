@@ -33,6 +33,7 @@ koriPlot <- function(base_size = 16,
 
   `%notin%` <- Negate(`%in%`)
   legendPositions <- c("none", "bottom", "top", "right", "left")
+  grids <- c("x", "y")
 
   # Value must be numeric
   if (!is.character(grid_lines) | !is.character(legend)) {
@@ -40,10 +41,15 @@ koriPlot <- function(base_size = 16,
 
     # Legend must be one of legendPositions
   } else if (legend %notin% legendPositions) {
-    warning <- c('You have not defined a legend position. Please choose one of the following:\n')
+    warning <- c('Incorrect legend position. Please choose one of the following:\n')
     stop(cat(warning, legendPositions, sep = "\n"))
 
-    # If grid_liones and legend are missing
+    # Grid_lines must be either "x" or "y"
+  } else if (grid_lines %notin% grids) {
+    warning <- c('Incorrect axis for grid_lines. Please choose one of the following:\n')
+    stop(cat(warning, grids, sep = "\n"))
+
+    # If grid_lines and legend are missing
   } else if (missing(grid_lines)) {
 
       theme_bw(
@@ -65,7 +71,14 @@ koriPlot <- function(base_size = 16,
         plot.subtitle = element_text(
           hjust = 0,
           size = rel(0.75),
-          margin = margin(t = 0, r = 0, b = 20, l = 0)
+          margin = margin(t = 0, r = 0, b = 5, l = 0)
+        ),
+
+        # Caption
+        plot.caption = element_text(
+          hjust = 0,
+          size = rel(0.55),
+          margin = margin(t = 20, r = 0, b = 0, l = 0)
         ),
 
         # Axis Title X
@@ -86,7 +99,7 @@ koriPlot <- function(base_size = 16,
         # Axis Text
         axis.text = element_text(
           color = rgb(105, 105, 105, maxColorValue = 255),
-          size = rel(0.55)
+          size = rel(0.75)
         ),
 
         # Axis Ticks
@@ -106,7 +119,9 @@ koriPlot <- function(base_size = 16,
 
         # Legend
         legend.position = legend,
-        legend.title = element_blank(),
+        legend.title = element_text(hjust = 0,
+                                    size = rel(0.75),
+                                    color = rgb(105, 105, 105, maxColorValue = 255)),
         legend.text = element_text(
           color = rgb(105, 105, 105, maxColorValue = 255),
           size = rel(0.75)
@@ -123,7 +138,7 @@ koriPlot <- function(base_size = 16,
       )
 
     # If grid_lines == "y"
-  } else if (grid_lines == "y" | missing(legend)) {
+  } else if (grid_lines == "y") {
 
     theme_bw(
       base_size = base_size,
@@ -144,7 +159,14 @@ koriPlot <- function(base_size = 16,
         plot.subtitle = element_text(
           hjust = 0,
           size = rel(0.75),
-          margin = margin(t = 0, r = 0, b = 20, l = 0)
+          margin = margin(t = 0, r = 0, b = 5, l = 0)
+        ),
+
+        # Caption
+        plot.caption = element_text(
+          hjust = 0,
+          size = rel(0.55),
+          margin = margin(t = 20, r = 0, b = 0, l = 0)
         ),
 
         # Axis Title X
@@ -165,7 +187,7 @@ koriPlot <- function(base_size = 16,
         # Axis Text
         axis.text = element_text(
           color = rgb(105, 105, 105, maxColorValue = 255),
-          size = rel(0.55)
+          size = rel(0.75)
         ),
 
         # Axis Ticks
@@ -186,7 +208,9 @@ koriPlot <- function(base_size = 16,
 
         # Legend
         legend.position = legend,
-        legend.title = element_blank(),
+        legend.title = element_text(hjust = 0,
+                                    size = rel(0.75),
+                                    color = rgb(105, 105, 105, maxColorValue = 255)),
         legend.text = element_text(
           color = rgb(105, 105, 105, maxColorValue = 255),
           size = rel(0.75)
@@ -203,7 +227,7 @@ koriPlot <- function(base_size = 16,
       )
 
     # If grid_lines == "x"
-  } else if (grid_lines == "x" | missing(legend)) {
+  } else if (grid_lines == "x") {
 
     theme_bw(
       base_size = base_size,
@@ -224,7 +248,14 @@ koriPlot <- function(base_size = 16,
         plot.subtitle = element_text(
           hjust = 0,
           size = rel(0.75),
-          margin = margin(t = 0, r = 0, b = 20, l = 0)
+          margin = margin(t = 0, r = 0, b = 5, l = 0)
+        ),
+
+        # Caption
+        plot.caption = element_text(
+          hjust = 0,
+          size = rel(0.55),
+          margin = margin(t = 20, r = 0, b = 0, l = 0)
         ),
 
         # Axis Title X
@@ -245,7 +276,7 @@ koriPlot <- function(base_size = 16,
         # Axis Text
         axis.text = element_text(
           color = rgb(105, 105, 105, maxColorValue = 255),
-          size = rel(0.55)
+          size = rel(0.75)
         ),
 
         # Axis Ticks
@@ -265,7 +296,9 @@ koriPlot <- function(base_size = 16,
 
         # Legend
         legend.position = legend,
-        legend.title = element_blank(),
+        legend.title = element_text(hjust = 0,
+                                    size = rel(0.75),
+                                    color = rgb(105, 105, 105, maxColorValue = 255)),
         legend.text = element_text(
           color = rgb(105, 105, 105, maxColorValue = 255),
           size = rel(0.75)
