@@ -191,10 +191,12 @@ koriPlot <- function(base_size = 16,
         ),
 
         # Axis Ticks
-        axis.ticks = element_line(
+        axis.ticks.y = element_line(
           color = "grey",
           size = rel(0.55)
         ),
+        
+        axis.ticks.x = element_blank(),
 
         # Grid Lines
         panel.grid.major.y = element_line(color = "grey",
@@ -280,10 +282,12 @@ koriPlot <- function(base_size = 16,
         ),
 
         # Axis Ticks
-        axis.ticks = element_line(
+        axis.ticks.x = element_line(
           color = "grey",
           size = rel(0.55)
         ),
+        
+        axis.ticks.y = element_blank(),
 
         # Grid Lines
         panel.grid.major.x = element_line(color = "grey",
